@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "zero.radio",
+  "name": "Радио",
+  "version": "2.0.0",
+  "author": "zod1ak",
+  "license": "MIT",
+  "description": "Радио в панели Omarchy: избранное отдельно от списка станций, поиск, история",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Радио",
+    "description": "Слушай Radio Record: избранное, история и поиск по названию",
+    "category": "Media",
+    "aliases": ["радио", "radio"],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": { "defaultVolume": 70 },
+    "schema": [
+      { "key": "defaultVolume", "type": "integer", "label": "Громкость по умолчанию", "min": 0, "max": 130, "step": 5, "defaultValue": 70 }
+    ]
+  }
+}
