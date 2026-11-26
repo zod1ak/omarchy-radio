@@ -5,7 +5,7 @@ import Quickshell.Io
 import qs.Commons
 import qs.Ui
 
-// World Radio: a static list of Radio Record stations (built from
+// Радио: a static list of Radio Record stations (built from
 // stations.md) with search, favorites and history. Playback goes through
 // mpv, driven over its JSON IPC socket (Quickshell's native Socket type,
 // so no extra CLI dependency like socat/ncat is needed) so volume/pause
@@ -1005,7 +1005,7 @@ finally:
                 spacing: Style.space(2)
 
                 Text {
-                  text: "World Radio"
+                  text: "Радио"
                   color: root.bar.foreground
                   font.family: root.bar.fontFamily
                   font.pixelSize: Style.font.title
